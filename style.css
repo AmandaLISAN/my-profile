@@ -1,0 +1,67 @@
+
+@import url("components/avatar.css");
+@import url("components/bouton.css");
+@import url("components/container.css");
+
+body {
+  color: darkslateblue;
+  background-image : url(https://media.istockphoto.com/photos/white-brick-wall-background-photo-picture-id684133544?k=20&m=684133544&s=612x612&w=0&h=BkWXDXCvusYNk56xpH3n61rko-Y_RgnqHI7re2fORyg=) ;
+	font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+  h1 {
+  color: darkred;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+  h2 {
+  color: darkred;
+  font-family: 'Rowdies', cursive;
+}
+
+  a{
+	text-decoration: none;
+	font-weight: bold;
+}
+  input, button, submit { border:none; } 
+
+  input{
+	margin-top: 9px;
+}
+
+#bouton-form-contact{
+	margin-top: 20px;
+}
+
+.bio {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }

@@ -1,0 +1,25 @@
+/*body {
+	<p>Used on a button:</p>
+<button style="font-size:24px">Button <i class="fa fa-linkedin"></i></button>
+
+<p>Unicode:</p>
+<i style="font-size:24px" class="fa">&#xf0e1;</i>
+
+</body>
+</html> 
+}
+*/
+
+
+.bouton{
+	color: white;
+  	padding: 8px 24px;
+  	border-radius: 4px;
+  	background: green;
+  	transition: background 0.3s ease;
+}
+.bouton:hover {
+  background: #1BCB7F;
+  color: white;
+}
+
